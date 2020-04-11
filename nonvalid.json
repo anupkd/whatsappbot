@@ -1,0 +1,22 @@
+{
+	"actions": [
+		{
+			"collect": {
+				"name": "user_valid",
+				"questions": [
+					{
+						"question": "Your details are not validated.Do you want to validate now?",
+						"name": "user_validate_now",
+						"type": "Twilio.YES_NO"
+					} 
+				],
+				"on_complete": {
+					"redirect": {
+						"method": "POST",
+						"uri": "https://b93923b7.ngrok.io/validate_useryesno"
+					}
+				}
+			}
+		}
+	]
+}

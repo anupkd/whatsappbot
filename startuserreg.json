@@ -1,0 +1,22 @@
+{
+	"actions": [
+		{
+			"collect": {
+				"name": "user_reg",
+				"questions": [
+					{
+						"question": "You are not registered for our whatsapp service.Reply Yes to register.Cancel to go back.",
+						"name": "user_reg_confirm",
+						"type": "Twilio.YES_NO"
+					}
+				],
+				"on_complete": {
+					"redirect": {
+						"method": "POST",
+						"uri": "https://b93923b7.ngrok.io/userreg"
+					}
+				}
+			}
+		}
+	]
+}

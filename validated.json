@@ -1,0 +1,15 @@
+{
+	"actions": [
+		{
+			"say": "User validated.Type 'help' to continue using."
+		},
+		{
+			"listen": {
+				"tasks": [
+					"goodbye",
+					"greeting"
+				]
+			}
+		}
+	]
+}

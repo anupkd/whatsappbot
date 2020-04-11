@@ -1,0 +1,10 @@
+{
+  "actions": [
+      {
+          "say": "Your message is send to xxxx@gmail.com"
+      },
+      {
+          "listen": true
+      }
+  ]
+}

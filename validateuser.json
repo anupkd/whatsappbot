@@ -1,0 +1,22 @@
+{
+	"actions": [
+		{
+			"collect": {
+				"name": "user_valid",
+				"questions": [
+					{
+						"question": "Please enter the OTP received in your registered mobile number.",
+						"name": "user_validate_otp",
+						"type": "Twilio.NUMBER"
+					} 
+				],
+				"on_complete": {
+					"redirect": {
+						"method": "POST",
+						"uri": "https://b93923b7.ngrok.io/validateuserotp"
+					}
+				}
+			}
+		}
+	]
+}

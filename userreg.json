@@ -1,0 +1,37 @@
+{
+	"actions": [
+		{
+			"collect": {
+				"name": "user_reg",
+				"questions": [
+					{
+						"question": "Enter your first name",
+						"name": "user_reg_fname",
+						"type": "Twilio.FIRST_NAME"
+					},
+			                {
+						"question": "Enter your last name",
+						"name": "user_reg_lname",
+						"type": "Twilio.LAST_NAME"
+					},
+			                {
+						"question": "Enter your Registered Phone number",
+						"name": "user_reg_phone",
+						"type": "Twilio.NUMBER"
+					},
+			                {
+						"question": "Enter your last four digits of account number",
+						"name": "user_reg_acno",
+						"type": "Twilio.NUMBER"
+					}
+				],
+				"on_complete": {
+					"redirect": {
+						"method": "POST",
+						"uri": "https://b93923b7.ngrok.io/userreg"
+					}
+				}
+			}
+		}
+	]
+}
