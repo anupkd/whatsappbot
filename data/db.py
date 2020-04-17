@@ -3,9 +3,9 @@ from data.user import User
 
 def opendb():
   mydb = mysql.connector.connect(
-    host="52.17.234.14",
+    host="52.17.234.15",
     user="root",
-    passwd="axiom123",
+    passwd="4",
     database="chatbot"
   )
   return mydb
