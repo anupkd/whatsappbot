@@ -17,7 +17,7 @@ def mailme(mailid):
     SERVER_NAME='smtp.gmail.com'
     SERVER_PORT=587
     USER_NAME='anupkkd81'
-    PASSWORD='Axiom123$'
+    PASSWORD='A*$'
     print('connecting')
     server = smtplib.SMTP(SERVER_NAME, SERVER_PORT)
     print('connected..')
